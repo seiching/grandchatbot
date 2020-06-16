@@ -1,0 +1,25 @@
+<head>
+  <link rel="stylesheet" href="Chatroom.css" />
+  
+</head>
+
+<body>
+  <div class="chat-container"></div>
+  
+  <script charset="UTF8" src="Chatroom.js"/></script>
+	
+  <script type="text/javascript">
+	
+    var chatroom = window.Chatroom({
+      host: "http://127.0.0.1:5005",
+      title: "Welcome Stock bot",
+      container: document.querySelector(".chat-container"),
+      welcomeMessage: "您好，很高興為您服務。",
+      speechRecognition: "en-US"
+    });
+    chatroom.openChat();
+	
+	
+  </script>
+  
+</body>

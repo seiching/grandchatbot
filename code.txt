@@ -1,0 +1,32 @@
+nlu_model.py:
+用來訓練 intent entity模型
+    train_nlu:
+        data:訓練資料(json)
+        configs:pipeline(yml)
+        model_dir:訓練完模型存放位置
+    run_nlu:
+        用來測試模型用
+        Interpreter.load():讀取訓練完模型
+        aa.pprint(interpreter2.parse(f"台北")):測試語句
+chatito:
+用來做訓練資料
+https://rodrigopivi.github.io/Chatito/
+    %[]:intent
+    ~[]:一般重複語句
+    @[]:entity
+train_init.py:
+用來訓練對話模型
+    train_dialogue_keras:主要用這個訓練
+        domain_file:domain.yml 記錄有甚麼intent entity slot action template(回應語句)
+        model_path:訓練完模型存放位置
+        training_data_file:story.md 裡面描述對話流程設計
+action.py:
+設計intent的對應回覆 可以回傳語句也可以在裡面寫程式做搜尋等等功能
+這邊主要使用FormAction 表單型
+參考連結:https://rasa.com/docs/rasa/core/forms/
+    name: action 的名字
+    required_slots:需要收集到哪些entity
+    slot_mappings:對應詢問entity時如何萃取entity
+    validate_entity_name:驗證entity
+    submit:最後完成回傳內容
+

@@ -1,0 +1,10 @@
+language: "zh"
+pipeline:
+  - name: "tokenizer_ckip"
+    model_path: "../data/CKIP_model"
+  - name: "intent_featurizer_wordvector"
+    vector: "../data/word2vec.model"
+  - name: "intent_classifier_tensorflow_embedding_bert"
+    epochs: 300
+  - name: "ner_crf"
+  - name: "ner_synonyms"

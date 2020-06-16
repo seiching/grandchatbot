@@ -1,0 +1,132 @@
+.chatroom{background-color:#001f3f;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+border-radius:0.03rem;box-shadow:0 0 0 0.1rem #ffffffcc;
+color:#000000;
+height:100%;
+letter-spacing:normal;
+max-height:100%;
+overflow:hidden;
+
+width:100%}.chatroom,.chatroom *{box-sizing:border-box}.chatroom h3{align-items:center;
+background-color:#2468c2;
+color:#c7f1fc;
+display:flex;
+font-size:1rem;
+font-weight: 600;
+height:2rem;
+justify-content:center;
+margin:0}.chatroom .chats{-webkit-overflow-scrolling:touch;
+box-sizing:border-box;
+height:calc(100% - 80px);
+margin:0;
+overflow-y:scroll;
+
+padding:1rem}.chatroom .chats .chat{background:#a5b8bd;
+border-radius:0.5rem;
+clear:both;
+float:left;
+font-size:1.2rem;
+font-style:normal;
+font-family:monospace, Microsoft JhengHei;
+line-height: 1.3rem;
+font-weight:600;
+list-style:none;
+margin:0.5rem 0 0;
+max-width:60%;
+padding:0.3rem 0.8rem;
+
+position:relative}.chatroom .chats .chat img{max-width:100%;
+vertical-align:middle}.chatroom .chats .chat.left{border-bottom-left-radius:0}.chatroom .chats .chat.right{border-bottom-right-radius:0;background-color:#a5b8bd;
+clear:both;
+float:right}.chatroom .chats .chat .text{word-wrap:break-word}.chatroom .chats .chat.chat-img{padding:10px}.chatroom .chats .chat a{color:#3498db;
+text-decoration:none}.chatroom .chats .chat ol,.chatroom .chats .chat ul{margin:0;
+
+padding-left:1.5em}.chatroom .chats .chat ol li,.chatroom .chats .chat ul li{padding-left:100}.chatroom .chats 
+margin:10px 0;
+padding:0}@keyframes fade{0%{opacity:1}to{opacity:.3}}.chatroom .chats .chat.waiting span{animation-direction:alternate;
+animation-duration:.8s;
+animation-iteration-count:infinite;
+animation-name:fade;
+animation-timing-function:ease-in-out;
+
+
+font-size:1.5rem}.chatroom .chats .chat.waiting span:first-child{animation-delay:0s}.chatroom .chats .chat.waiting span:nth-child(2){animation-delay:.4s}.chatroom .chats .chat.waiting span:nth-child(3){animation-delay:.8s}.chatroom .chats .time{clear:both;
+color:#8cd6f8;
+font-size:0.8rem;
+height:0.5rem;
+list-style:none;
+
+margin:0.5rem 0 0.6rem}.chatroom .chats .time.left{float:left}.chatroom .chats .time.right{float:right}.chatroom .chats .chat-buttons{clear:both;font-size:1rem;font-weight:800;
+list-style:none;margin:0.8rem 0;padding:0;position:relative;
+
+text-align:center}.chatroom .chats .chat-buttons .chat-button{background-color:#7FDBFF;
+border:1rem ;
+border-radius:5rem;
+color:#000000;
+cursor:pointer;
+display:inline-block;
+letter-spacing:normal;
+margin:0.1rem;
+padding:0.5rem 0.6rem;
+
+transition:all .3s ease}.chatroom .chats .chat-buttons .chat-button.chat-button-selected,.chatroom .chats .chat-buttons .chat-button:hover{background-color:#044d88;
+color:#99c8ee}.chatroom .chats .chat-buttons .chat-button.chat-button-disabled{border:0.8rem color:grey}.chatroom .input{align-items:center;
+    
+background-color:#053779dc;
+display:flex;
+flex-direction:row;
+height:2.5rem;
+margin:0;
+padding:0.001rem 0.2rem 0.001rem 0.2rem;
+
+width:100%}.chatroom .input input[type=text]{background-color:#a6e3f5;
+border:0.01rem solid #fff;
+border-bottom-left-radius:0.1rem;
+border-bottom-right-radius:0;
+border-right:none;
+border-top-left-radius:0.1rem;
+border-top-right-radius:0;
+box-sizing:border-box;
+color:#020101;
+flex:5;
+font-size:1rem;
+height:2rem;
+outline:0;
+padding:0 0.2rem;
+
+transition:background-color .2s ease}.chatroom .input input[type=text]:focus{background-color:#c2e6f1;
+box-shadow:none}.chatroom .input input[type=submit]{background:#53c6e9;
+border:0.01rem solid #fab27a;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0.1rem;
+border-top-left-radius:0;
+border-top-right-radius:0.1rem;
+box-shadow:none;
+color:#021014;
+cursor:pointer;
+display:inline-block;
+flex:1rem;
+font-size:0.8rem;
+font-weight:600;
+height:2rem;
+line-height:0.05;
+min-width:5rem;
+outline:none;
+overflow:hidden;
+padding:0;
+text-align:center;
+text-overflow:ellipsis;
+text-transform:uppercase;
+transition:all .3s ease;
+
+white-space:nowrap}.chatroom .input input[type=submit]:hover{background:#04a9db}.chatroom #speech-input{background:#53c6e9;
+border:0.03rem solid #faf5f2;
+border-radius:0.3rem;
+color:#021014;
+cursor:pointer;
+height:2rem;
+min-width:3rem;
+margin-left:0.3rem;
+transition:all .3s ease;
+width:5rem}.chatroom #speech-input:hover{background:#04a9db}.chatroom .vertical-center{vertical-align:middle}

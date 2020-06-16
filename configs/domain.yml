@@ -1,0 +1,49 @@
+actions:
+- action_room
+- action_Question
+- action_Form
+- utter_hi
+- utter_unknown
+entities:
+- room_type
+- room
+- Location
+- H_Form
+- L_Form
+- E_Form
+- S_Form
+- Work_time
+- MBO
+- Need
+intents:
+- room
+- Question
+- Form
+slots:
+  room_type:
+    type: text
+  room:
+    type: text
+  Location:
+    type: text
+  H_Form:
+    type: text
+  L_Form:
+    type: text
+  E_Form:
+    type: text
+  S_Form:
+    type: text
+  Work_time:
+    type: text
+  MBO:
+    type: text
+  Need:
+    type: text
+templates:
+  utter_hi:
+  - text: 正在處理您的查詢，查詢結果如下
+  utter_process:
+  - text: 正在查詢中
+  utter_unknown:
+  - text: 這個我不知道哦

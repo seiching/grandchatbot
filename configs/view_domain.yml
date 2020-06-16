@@ -1,0 +1,93 @@
+intents:
+  - travel
+  - view
+  - itinerary
+  - Weather
+  - phone
+  - Where
+  - END
+
+entities:
+  - phone
+  - weather
+  - city
+  - play
+  - climb
+  - shower
+  - pray
+  - family
+  - spring
+  - temple
+  - mountain
+  - easy_use
+  - inside
+  - area
+  - child
+  - older
+  - date
+  - location
+  - end
+
+slots:
+  phone:
+    type: text
+  weather:
+    type: text
+  city:
+    type: text
+  play:
+    type: text
+  climb:
+    type: text
+  shower:
+    type: text
+  pray:
+    type: text
+  family:
+    type: text
+  spring:
+    type: text
+  temple:
+    type: text
+  mountain:
+    type: text
+  easy_use:
+    type: text
+  inside:
+    type: text
+  area:
+    type: text
+  child:
+    type: text
+  older:
+    type: text
+  date:
+    type: text
+  location:
+    type: text
+  address:
+    type: text
+  sql:
+    type: text
+  end:
+    type: text
+
+templates:
+  utter_hi:
+    - text: "您好"
+  utter_unknown:
+    - text: "請問還有什麼需要查詢的嗎？"
+  utter_output:
+    - text: "推薦景點：{location}\n出遊時間：2020/{date}\n天氣：{weather}\n縣市：{city}\n地址：{address}\n電話：{phone}\n"
+
+actions:
+  - utter_hi
+  - utter_unknown
+  - utter_output
+  - action_travel
+  - action_view
+  - action_itinerary
+  - action_Weather
+  - action_phone
+  - action_Where
+  - action_output

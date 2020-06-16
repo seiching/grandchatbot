@@ -1,0 +1,27 @@
+﻿pip install rasa-nlu==0.15.1
+pip install rasa-core==0.14.5
+pip uninstall rasa-nlu rasa-core rasa-core-sdk tensorflow tensorboard tensorflow-estimator
+
+
+有gpu
+pip install tensorflow-gpu==1.14.0
+沒有gpu 
+pip install tensorflow==1.14.0
+
+
+pip install GPUtil
+pip install ckiptagger
+pip install gensim==3.3.0
+
+
+將custom_pkg裡面檔案並解壓縮，將解完壓縮的所有檔案複製到python環境的 site-packages
+
+
+Ckip model:
+https://drive.google.com/drive/folders/105IKCb88evUyLKlLondvDBoh7Dy_I1tm
+下載完將裡面的東西放到 ../data/CKIP_model
+
+
+Word2vec model:
+https://drive.google.com/drive/folders/100hoaiEooMgCNfLRpJ4spaHnbjxG_puV?usp=sharing
+下載完將裡面的東西放到 ../data

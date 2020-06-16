@@ -1,0 +1,99 @@
+%[rent]('training': '2000')
+    ~[want]買房子~[dot]要~[apply]@[houserent]~[dot?]
+%[name]('training': '2000')
+    @[Lname]@[Fname]
+%[old]('training': '2000')
+    @[old]
+%[occupation]('training': '2000')
+    @[occupation]~[dot?]
+%[price]('training': '3000')
+    @[price]
+    @[income]
+%[END]('training': '2000')
+    @[end]~[dot?]
+    ~[ok]~[dot?]
+~[apply]
+    申辦
+    申請
+~[want]
+    我想要
+    我要
+    我想
+~[dot]
+    。
+    .
+    、
+~[ok]
+    OK
+    ok
+    好
+    好的
+    好了
+    知道了
+    了解
+~[num]
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+@[houserent]
+    房屋貸款
+@[occupation]
+    自由業者
+    服務業
+    公務員
+    上市櫃員工
+    金融產業員工
+@[old]
+    ~[num]~[num]歲
+@[income]
+    ~[num]~[num]~[num]~[num]~[num]元
+    ~[num]~[num]~[num]~[num]~[num]~[num]元
+@[price]
+    ~[num]~[num]~[num]~[num]萬元
+    ~[num]~[num]~[num]萬元
+@[end]
+    沒有
+    沒問題
+    沒有問題了
+    輸出表單
+    結束對話
+    結束
+@[Fname]
+    先生
+    小姐
+@[Lname]
+    趙
+    錢
+    孫
+    李
+    周
+    吳
+    鄭
+    王
+    馮
+    陳
+    衛
+    蔣
+    沈
+    韓
+    楊
+    朱
+    秦
+    尤
+    許
+    何
+    呂
+    施
+    張
+    孔
+    曹
+    魏
+    陶
+    林

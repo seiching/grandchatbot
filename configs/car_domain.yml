@@ -1,0 +1,89 @@
+intents:
+  - rent
+  - name
+  - getcar
+  - carname
+  - phone
+  - END
+
+entities:
+  - phone
+  - carname
+  - location
+  - num
+  - sun
+  - time
+  - car
+  - date
+  - Fname
+  - Lname
+  - end
+
+slots:
+  phone:
+    type: text
+  carname:
+    type: text
+  location:
+    type: text
+  num:
+    type: text
+  sun:
+    type: text
+  time:
+    type: text
+  car:
+    type: text
+  date:
+    type: list
+  Fname:
+    type: text
+  Lname:
+    type: text
+  end:
+    type: text
+  name:
+    type: text
+  start_sun:
+    type: unfeaturized
+  start_time:
+    type: unfeaturized
+  start_location:
+    type: unfeaturized
+  end_sun:
+    type: unfeaturized
+  end_time:
+    type: unfeaturized
+  end_location:
+    type: unfeaturized
+  data:
+    type: unfeaturized
+  data_return:
+    type: unfeaturized
+  rent_price:
+    type: unfeaturized
+
+templates:
+  utter_hi:
+    - text: "您好"
+  utter_unknown:
+    - text: "請問還有什麼需要為您服務的嗎？"
+  utter_ask_name:
+    - text: "沒問題，請問該怎麼稱呼您？"
+  utter_ask_start_time:
+    - text: "{data}"
+  utter_ask_carname:
+    - text: "{data}"
+  utter_ask_end_time:
+    - text: "{data_return}"
+  utter_ask_phone:
+    - text: "好的，請問{name}的電話是?"
+
+forms:
+  - car_form
+  - car2_form
+
+actions:
+  - utter_hi
+  - utter_unknown
+  - action_output

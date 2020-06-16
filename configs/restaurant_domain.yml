@@ -1,0 +1,83 @@
+intents:
+  - order
+  - time
+  - Person
+  - name
+  - Phone
+  - END
+  - OK
+
+entities:
+  - restaurant
+  - F_name
+  - L_name
+  - order
+  - thanks
+  - num
+  - year
+  - date
+  - sun
+  - time
+  - phone
+  - end
+
+slots:
+  restaurant:
+    type: text
+  F_name:
+    type: text
+  L_name:
+    type: text
+  order:
+    type: text
+  thanks:
+    type: text
+  num:
+    type: text
+  year:
+    type: text
+  date:
+    type: text
+  sun:
+    type: text
+  time:
+    type: text
+  phone:
+    type: unfeaturized
+    auto_fill: False
+  end:
+    type: text
+  output_sun:
+    type: text
+  ouput_time:
+    type: text
+  output_people:
+    type: text
+  output_date:
+    type: text
+  name:
+    type: text
+  phone_num:
+    type: text
+
+templates:
+  utter_hi:
+    - text: "您好"
+  utter_unknown:
+    - text: "請問還有什麼需要查詢的嗎？"
+  utter_ask_time:
+    - text: "您好，這裡是夏季合菜餐廳，請問您要訂什麼時候呢？"
+  utter_ask_num:
+    - text: "請問共多少人呢?"
+  utter_ask_name:
+    - text: "請問您的大名？"
+  utter_ask_phone_num:
+    - text: "請問連絡電話是?"
+
+forms:
+  - restaurant_form
+  - info_form
+actions:
+  - utter_hi
+  - action_output
+  - action_none

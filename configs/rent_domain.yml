@@ -1,0 +1,78 @@
+intents:
+  - rent
+  - name
+  - old
+  - occupation
+  - price
+  - END
+
+entities:
+  - houserent
+  - occupation
+  - old
+  - income
+  - price
+  - Fname
+  - Lname
+  - end
+
+slots:
+  houserent:
+    type: text
+  occupation:
+    type: text
+  old:
+    type: text
+  income:
+    type: text
+  price:
+    type: text
+  Fname:
+    type: text
+  Lname:
+    type: text
+  end:
+    type: text
+  name:
+    type: text
+  h_price:
+    type: text
+  self_rent:
+    type: text
+  predict_rent:
+    type: text
+  real_rent:
+    type: float
+  rate:
+    type: text
+  percent:
+    type: text
+  need_money:
+    type: float
+
+templates:
+  utter_hi:
+    - text: "您好"
+  utter_unknown:
+    - text: "請問還有什麼需要查詢的嗎？"
+  utter_ask_name:
+    - text: "您的姓名是?"
+  utter_ask_occupation:
+    - text: "請問你的職業是？"
+  utter_ask_old:
+    - text: "請問你的年齡是？"
+  utter_ask_income:
+    - text: "請問您月收入?"
+  utter_ask_h_price:
+    - text: "房屋總價為多少?"
+  utter_ask_self_rent:
+    - text: "請問自備多少首付款?"
+  utter_ask_predict_rent:
+    - text: "預期貸款多少金額?"
+
+forms:
+  - rent_form
+actions:
+  - utter_hi
+  - utter_unknown
+  - action_output

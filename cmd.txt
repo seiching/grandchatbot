@@ -1,0 +1,8 @@
+先將 models 資料夾中其中一個bot 裡面的2個檔案放入models 資料夾
+下面action 指令請針對bot指定對應的action
+
+在chatbot資料夾執行
+python -m rasa_core_sdk.endpoint --actions {對應的bot}action
+python -m rasa_utils.bot -d ../models/dialogue_keras -u ../models/nlu/default/test  --endpoints configs/endpoints.yml
+
+

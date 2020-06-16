@@ -1,0 +1,14 @@
+language: "zh"
+pipeline:
+  - name: "tokenizer_ckip"
+    model_path: "./data/CKIP_model"
+  - name: "bert_vectors_featurizer"
+    ip: '127.0.0.1'
+    port: 5555
+    port_out: 5556
+    show_server_config: True
+    timeout: 50000
+  - name: "intent_classifier_tensorflow_embedding_bert"
+    epochs: 500
+  - name: "ner_crf"
+  - name: "ner_synonyms"
