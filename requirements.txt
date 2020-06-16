@@ -17,7 +17,7 @@ pydot==1.4.1
 pyflakes==2.1.1
 python-crfsuite==0.9.6
 python-dateutil==2.8.1
-python-engineio==3.6.0
+python-engineio==3.8.2.post1
 python-socketio==2.1.2
 python-telegram-bot==10.1.0
 redis==2.10.6
